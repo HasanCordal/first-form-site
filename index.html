@@ -1,0 +1,75 @@
+<html>
+   <head>
+        <title>form elemanları</title>
+ 
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+
+
+</html>
+<body class="ortalama">
+   <!--
+      - adı *
+      - telefon *
+      - email *
+      - mesaj
+      - yaşadığı şehir
+      - cinsiyet
+
+        reset ve submit POST:https://httpbin.org/post 
+   -->  
+   <form action="https://httpbin.org/post " method="post">
+
+     <div class="form-row"> 
+      <label for="adi">Adı</label>
+      <input name="adi" id="adi" type="text" required placeholder="Hasan CORDAL">
+    </div>
+
+    <div class="form-row"> 
+        <label for="telefon">Telefon</label>
+        <input name="tel" id="telefon" type="tel" required>
+      </div>
+
+      <div class="form-row"> 
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="mesaj">Mesaj</label>
+        <textarea name="mesaj" id="mesaj" cols="50" rows="3"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="sehir">Şehir</label>
+        <select name="sehir" id="sehir">
+            <option value="34">İstanbul</option>
+            <option value="35">Isparta</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+
+        <p>Sevdiğiniz renk</p>
+        <div class="radio-container">
+        <label>
+          <input type="radio" name="renk" value="kirmizi" checked/> Kırmızı
+        </label>
+
+        <label>
+          <input type="radio" name="renk" value="yesil" checked/> Yeşil
+        </label> 
+
+        <label>
+          <input type="radio" name="renk" value="mavi" checked/> Mavi
+        </label>
+      </div>
+      </div>
+
+      <div class="form-row">
+        <button type="reset">Sıfırla</button>
+        <button type="submit">Gönder</button>
+        </div>
+   </form>
+    </body>
